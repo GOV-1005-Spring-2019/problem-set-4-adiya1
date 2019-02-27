@@ -193,7 +193,7 @@ x %>%
 x %>% 
   select(ager, response) %>%
   
-  # i select variables i want to observe in my individual graph
+  # i select variables i want to observe in my individual graph. i want to observe how political preferences (Republican, Democrat, Undecided) change depending on whether an individual belongs to one of the four presented age groups
   
   filter(ager != "[DO NOT READ] Refused") %>%
   
@@ -221,7 +221,7 @@ x %>%
        subtitle = 'Poll shows political preferences of four age groups',
        caption = 'New York Times Upshot/Siena College 2018 live polls') +
   
-  # i assign labels to my graph to give more information about what it portrays
+  # i assign labels to my graph to give more information about what we are looking at. it is important to provide as much information as possible, so that a person who looks at a graph can understand what it portrays without reading additional information
   
   ylab("Number of Respondents") +
   xlab("Age") +
